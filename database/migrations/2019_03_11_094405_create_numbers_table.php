@@ -16,7 +16,7 @@ class CreateNumbersTable extends Migration
         Schema::create('numbers', function (Blueprint $table) {
             $table->bigIncrements('num_id');
             $table->integer('cnt_id')->unsigned();
-            $table->text('num_number')->unique();
+            $table->text('num_number'); //->unique();
             $table->dateTime('num_created')->default(date('Y-m-d H:i:s'));;
         });
 
