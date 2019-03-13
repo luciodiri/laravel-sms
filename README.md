@@ -1,26 +1,26 @@
-#Log table example
+# Log table example
 
-##Description
+## Description
 This program pulls and displays results from an SMS messages success/failure tracking.
 
-####Filters:
+#### Filters:
 Date from - to.
 User (optional)
 Country (optional)
 
-####Environment:
+#### Environment:
 Using Laravel 5.7 Framework PHP7.2 & mysql
 
-####Notes:
+#### Notes:
 Using SQL raw queries for main log table data.
 using Laravel Eloquent ORM for Filling filters data.
 
 Interesting work is done at:
-* Model: app/SendLog.php 
+* Model: app/SendLog.php (logs Query)
 * Controller: app/http/controllers/SendLogsController
 * View: resources/views/send_log.bladed.php
 
-###Setup:
+### Setup:
 Pull
 * Run composer update
 * setup DB connection at .env file
