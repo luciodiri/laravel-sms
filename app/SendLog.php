@@ -69,7 +69,6 @@ class SendLog extends Model
             'cnt_id_cond' =>  $cnt_id,
             'cnt_id' => $cnt_id
         ]);
-//        exit(var_dump($logs));
 
         return $logs;
     }
