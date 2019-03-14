@@ -3,31 +3,28 @@
 ## Description
 This program pulls and displays results from an SMS messages success/failure tracking.
 
-#### Filters:
-Date from - to.
-User (optional)
-Country (optional)
+Watch demo at: https://luciodiri-sms.herokuapp.com/
 
 #### Environment:
-Using Laravel 5.7 Framework PHP7.2 & mysql
+PHP7.2 on Apache 2. Laravel 5.7 with mysql DB 
 
 #### Notes:
 Using SQL raw queries for main log table data.
 using Laravel Eloquent ORM for Filling filters data.
 
-Interesting work is done at:
+**Interesting work is done at:**
 * Model: app/SendLog.php (logs Query)
 * Controller: app/http/controllers/SendLogsController
 * View: resources/views/send_log.bladed.php
 
 ### Setup:
-Pull
+* git Pull
 * Run composer update
 * setup DB connection at .env file
-* Create the database. run: php artisan migrate
- migration files (database building files) are at database/migrations
-* Fill the database with Fake content by loading [site-url]//create-data
-*you can set the records # at app/http/controllers/createDataController
+* Create the database- run: php artisan migrate.
+ (migration files are at **database/migrations**)
+* Fill the database with Fake content by loading [site-url]/create-data
+(you can change the desired records number at app/http/controllers/**createDataController**)
 * That's it, Go to site root and search the logs
 
 *set config/database.php mysql strict mode to false.

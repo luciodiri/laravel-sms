@@ -15,7 +15,7 @@ class CreateSendLogTable extends Migration
     {
         Schema::create('send_log', function (Blueprint $table) {
             $table->bigIncrements('log_id');
-            $table->bigInteger('usr_id')->unsigned();
+            $table->bigInteger('usr_id')->unsigned()->unique();
             $table->bigInteger('num_id')->unsigned();
             $table->text('log_message');
             $table->boolean('log_success');
